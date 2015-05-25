@@ -23,7 +23,7 @@ public:
 class Circle : public Shape
 {
 public:
-	Circle(float w, float h, string n) : Shape(w, h, n){};
+	Circle(float w, float h, string n);
 	string name();
 	float area();
 	float perimeter();
@@ -33,7 +33,7 @@ public:
 class Rectangle : public Shape
 {
 public:
-	Rectangle(float w, float h, string n) : Shape(w, h, n){};
+	Rectangle(float w, float h, string n);
 	string name();
 	float area();
 	float perimeter();
@@ -43,7 +43,7 @@ public:
 class Triangle : public Shape
 {
 public:
-	Triangle(float w, float h, string n) : Shape(w, h, n){};
+	Triangle(float w, float h, string n);
 	string name();
 	float area();
 	float perimeter();

@@ -25,7 +25,7 @@ float Circle::perimeter()
 {
 	return (2 * pi*width);
 }
-float Circle::draw(){}
+float Circle::draw(){ return 0; }
 
 Rectangle::Rectangle(float w = 0, float h = 0, string n = "Rectangle") : Shape(w, h, n){};
 string Rectangle::name()
@@ -38,9 +38,9 @@ float Rectangle::area()
 }
 float Rectangle::perimeter()
 {
-	return (2 * height*width);
+	return (2 * (height+width));
 }
-float Rectangle::draw(){}
+float Rectangle::draw(){ return 0; }
 
 Triangle::Triangle(float w, float h, string n = "Triangle") : Shape(w, h, n){};
 string Triangle::name()
@@ -53,9 +53,9 @@ float Triangle::area()
 }
 float Triangle::perimeter()
 {
-	return (2*height+width); //this formula is incorrect
+	return (2*(height+width)); //this formula is incorrect
 }
-float Triangle::draw(){}
+float Triangle::draw(){ return 0; }
 
 
 
