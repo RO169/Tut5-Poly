@@ -7,12 +7,12 @@ using namespace std;
 class Shape
 {
 protected:
-	int width;
-	int height;
+	float width;
+	float height;
 	string nameS;
 
 public:
-	Shape(int w, int h, string n);
+	Shape(float w, float h, string n);
 	virtual string name() = 0;
 	virtual float area() = 0;
 	virtual float perimeter() = 0;
@@ -23,7 +23,7 @@ public:
 class Circle : public Shape
 {
 public:
-	Circle(int w, int h, string n) : Shape(w, h, n){};
+	Circle(float w, float h, string n) : Shape(w, h, n){};
 	string name();
 	float area();
 	float perimeter();
@@ -33,7 +33,7 @@ public:
 class Rectangle : public Shape
 {
 public:
-	Rectangle(int w, int h, string n) : Shape(w, h, n){};
+	Rectangle(float w, float h, string n) : Shape(w, h, n){};
 	string name();
 	float area();
 	float perimeter();
@@ -43,7 +43,7 @@ public:
 class Triangle : public Shape
 {
 public:
-	Triangle(int w, int h, string n) : Shape(w, h, n){};
+	Triangle(float w, float h, string n) : Shape(w, h, n){};
 	string name();
 	float area();
 	float perimeter();

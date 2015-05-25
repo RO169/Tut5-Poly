@@ -1,17 +1,18 @@
 #include "Shape.h"
 #include<string>
 using namespace std;
-const int pi = 3.1416;
+float pi = 3.14;
 
-Shape::Shape(int w = 0, int h = 0, string n = "Shape")
+Shape::Shape(float w = 0, float h = 0, string n = "Shape")
 {
 	width = w;
 	height = h;
 	nameS = n;
 }
+
 Shape::~Shape(){}
 
-Circle::Circle(int w=0, int h=0, string n = "Circle") : Shape(w, h, n){};
+Circle::Circle(float w=0, float h=0, string n = "Circle") : Shape(w, h, n){};
 string Circle::name()
 {
 	return (nameS);
@@ -26,7 +27,7 @@ float Circle::perimeter()
 }
 float Circle::draw(){}
 
-Rectangle::Rectangle(int w = 0, int h = 0, string n = "Rectangle") : Shape(w, h, n){};
+Rectangle::Rectangle(float w = 0, float h = 0, string n = "Rectangle") : Shape(w, h, n){};
 string Rectangle::name()
 {
 	return(nameS);
@@ -41,7 +42,7 @@ float Rectangle::perimeter()
 }
 float Rectangle::draw(){}
 
-Triangle::Triangle(int w, int h, string n = "Triangle") : Shape(w, h, n){};
+Triangle::Triangle(float w, float h, string n = "Triangle") : Shape(w, h, n){};
 string Triangle::name()
 {
 	return(nameS);
